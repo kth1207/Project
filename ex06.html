@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>In-Class Exercise 04</title>
+    <title>In-Class Exercise 06</title>
     <style>
       h1 {font-family: "Gill Sans", "Gill Sans MT", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       color: navy;
@@ -33,9 +33,15 @@
         margin-left: 10px;
       }
       #Effort {
-        border: solid;
-        border: 3px;
-        border-color: red;
+        border: 3px dotted red;
+      }
+      #green {
+        color: green;
+      }
+      p.blue {
+        font-style: italic;
+        color: blue;
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -45,25 +51,25 @@
     <h3>This line shows how h3 will be different from h1 and h2</h3>
     <hr />
     <h1>Quote One from Winston Churchill</h1>
-    <p>
+    <p class="blue">
       Criticism may not be agreeable, but it is necessary. It fulfils the same
       function as pain in the human body. It calls attention to an unhealthy
       state of things.
     </p>
-    <h3>Quote Two from Winston Churchill</h3>
+    <h3 class="blue">Quote Two from Winston Churchill</h3>
     <p>
       Courage is rightly esteemed the first of human qualities... because it is
       the quality which guarantees all others. Courage is what it takes to stand
       up and speak; courage is also what it takes to sit down and listen.
     </p>
-    <h2>Quote Three from Winston Churchill</h2>
+    <h2 id="green">Quote Three from Winston Churchill</h2>
     <h3>This paragraph will have a border</h3>
     <p id="Effort">
       Continuous effort - not strength or intelligence - is the key to unlocking
       our potential.
     </p>
     <hr />
-    <p>
+    <p class="blue">
       The tiger (Panthera tigris) is the largest cat species, reaching a total
       body length of up to 3.3 metres (11 ft) and weighing up to 306 kg (670
       lb). It is the third largest land carnivore (behind only the Polar bear
