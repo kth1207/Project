@@ -25,3 +25,14 @@ body {
         padding: 40px 10px 10px 10px;
         width: 50%;
       }
+
+      #gucci {
+          font-size: 22pt
+      }
+
+      p.tiger {
+        color: red;
+      }
+
+      p::first-letter {
+        font-size: 200%; }
