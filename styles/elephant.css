@@ -1,0 +1,13 @@
+table {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    font: Arial;
+}
+tr, td {
+    border: 1px solid black;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
