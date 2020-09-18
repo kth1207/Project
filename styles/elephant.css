@@ -2,7 +2,8 @@ table {
     width: 500px;
     margin-right: auto;
     margin-left: auto;
-    font: Arial;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    background-color: darkgrey;
 }
 tr, td {
     border: 1px solid black;
@@ -10,4 +11,17 @@ tr, td {
     padding-right: 3px;
     padding-top: 3px;
     padding-bottom: 3px;
+    vertical-align: top;
+}
+#seventy {
+    width:70%;
+}
+td.thirty {
+    width: 30px;
+}
+caption {
+    width: 70%
+}
+body {
+    background-color: cornsilk;
 }
