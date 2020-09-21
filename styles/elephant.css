@@ -16,8 +16,8 @@ tr, td {
 #seventy {
     width:70%;
 }
-td.thirty {
-    width: 30px;
+#thirty {
+    width: 30%;
 }
 caption {
     width: 70%
