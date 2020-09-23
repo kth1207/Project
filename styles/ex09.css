@@ -1,0 +1,7 @@
+body {
+    background-color: white;
+    width: 300px;
+    border: 100px solid lightgrey;
+    content: lightgray;
+    margin: 20px; 
+    text-align: center; }
