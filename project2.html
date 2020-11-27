@@ -39,6 +39,7 @@
               <a href="project4.html">Soy Bean Paste Soup</a>
               <a href="project5.html">Bulgogi</a>
               <a href="project6.html">Spicy Kimchi Soup</a>
+              <a href="project8.html">Jap Chae</a>
             </div>
         </div>
         <a href="project sitemap.html">Sitemap</a>
@@ -52,7 +53,7 @@
         What is it? 
     </h2>
     <div id="pic">
-        <img src="images/kimchi fried rice 2.jpg" alt="Korean dish" title="Kimchi Fried Rice" width="600" height="400">
+        <img id="slideshow" src="images/kimchi fried rice 2.jpg" alt="Korean dish" title="Kimchi Fried Rice" width="600" height="400">
     </div>
     <div id="text">
         Kimchi Fried Rice is one of the most popular dish among the Koreans due to its simplicity and cheapness. People who cannot afford expensive meals favor kimchi fried rice 
@@ -102,3 +103,53 @@
     </div>   
     <div id="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/Lf44Fk7H24s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
+
+<script>
+    const slides = [
+        "images/kimchi fried rice.jpg",
+        "images/kimchi fried rice 2.jpg",
+        "images/kimchi fried rice 3.jpg",
+        "images/kimchi fried rice 4.jpg",
+    ];
+    let i = 0;
+
+    function slideshow(){
+        console.log("running...")
+        let tigerImage = document.getElementById("slideshow");
+        if (i === slides.length) {
+            i = 0;
+        }
+        tigerImage.src = slides[i];
+        console.log(i);
+        i++;
+        setTimeout(slideshow, 2000);
+
+        
+    }
+
+    document.querySelector("body").onload = slideshow
+
+    function enlarge() {
+            let x = document.getElementById("text");
+            let w = x.style.fontSize;
+            w = "30px";
+            x.style.fontSize = w;
+        }
+
+        document.getElementById("text").onmouseover = function () {
+            enlarge(); 
+        };
+
+        function reduce() {
+            let x = document.getElementById("text");
+            let w = x.style.fontSize;
+            w = "20px";
+            x.style.fontSize = w;
+        }
+        document.getElementById("text").onmouseout = function () {
+            reduce();
+        };
+
+</script>
+</body>
+</html>

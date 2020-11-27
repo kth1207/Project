@@ -27,6 +27,7 @@
                 <a href="project4.html">Soy Bean Paste Soup</a>
                 <a href="project5.html">Bulgogi</a>
                 <a href="project6.html">Spicy Kimchi Soup</a>
+                <a href="project8.html">Jap Chae</a>
             </div>
         </div>
         <a href="project sitemap.html">Sitemap</a>
@@ -40,7 +41,7 @@
             What is it?
         </h2>
         <div id="pic">
-            <img src="images/Korean-Beef-Bibimbap-Recipe-1-of-1-Copy.jpg" alt="Korean dish" title="Kimchi Fried Rice"
+            <img id="slideshow" src="images/Korean-Beef-Bibimbap-Recipe-1-of-1-Copy.jpg" alt="Korean dish" title="Kimchi Fried Rice"
                 width="600" height="400">
         </div>
         <div id="text">
@@ -105,3 +106,53 @@
                 allowfullscreen></iframe>
         </div>
     </div>
+
+    <script>
+        const slides = [
+            "images/bibimbap.jpeg",
+            "images/bibimbap2.jpg",
+            "images/bibimbap3.jpg",
+            "images/bibimbap4.jpg",
+        ];
+        let i = 0;
+    
+        function slideshow(){
+            console.log("running...")
+            let tigerImage = document.getElementById("slideshow");
+            if (i === slides.length) {
+                i = 0;
+            }
+            tigerImage.src = slides[i];
+            console.log(i);
+            i++;
+            setTimeout(slideshow, 2000);
+    
+            
+        }
+    
+        document.querySelector("body").onload = slideshow
+
+        function enlarge() {
+            let x = document.getElementById("text");
+            let w = x.style.fontSize;
+            w = "30px";
+            x.style.fontSize = w;
+        }
+
+        document.getElementById("text").onmouseover = function () {
+            enlarge(); 
+        };
+
+        function reduce() {
+            let x = document.getElementById("text");
+            let w = x.style.fontSize;
+            w = "20px";
+            x.style.fontSize = w;
+        }
+        document.getElementById("text").onmouseout = function () {
+            reduce();
+        };
+    
+    </script>
+</body>
+</html>
