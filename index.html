@@ -102,5 +102,36 @@
         </li>
     </ul>
 </footer>
+
+<script>
+  function enlarge() {
+      let x = document.querySelector("img");
+      let w = x.width;
+      w = w* 1.5;
+      x.width = w;
+
+      let y = x.height;
+      y = y*1.5;
+      x.height = y;
+  }
+
+  document.querySelector("img").onmouseover = function () {
+      enlarge();
+  };
+
+  function reduce() {
+      let x = document.querySelector("img");
+      let w = x.width;
+      w = w / 1.5;
+      x.width = w;
+
+      let y = x.height;
+      y = y/ 1.5;
+      x.height = y;
+  }
+  document.querySelector("img").onmouseout = function () {
+      reduce();
+  };
+</script>
 </body>
 </html>

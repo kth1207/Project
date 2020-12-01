@@ -143,3 +143,7 @@ body {
   #background {
     background-color: lightgrey;
   }
+
+  h2 {
+    font-size: 20px;
+  }
