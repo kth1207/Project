@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Introduction to Korean dish">
+    <meta name="author" content="Tony Kim">
     <meta name="description" content="This page includes information about some of the most famous Korean dish, and gives you recipes necessary so that you can experience the food! 
     Also, it gives you some names of restaurants where you can buy the experience.">
     <meta name="keywords"
         content="Korean dish, Tonydish, bulgogi, spicy kimchi stew, soy bean paste soup, Korean restaurants in Boston, Korean food">
     <title>Tony's Dish-Places where you can experience</title>
+    <link rel="icon" href="images/favicon-16x16.png" type="image/png">
     <link rel="stylesheet" href="styles/contact.css" type="text/css" />
 </head>
 
@@ -49,7 +50,7 @@
         <br />
         </br>
         <label for="username">Email</label>
-        <input type="text" id="username" name="Email Address" placeholder="Email Address" />
+        <input type="text" id="username" name="email" placeholder="Email Address" />
         </br>
         </br>
 
@@ -60,7 +61,7 @@
         </div>
         <textarea id="comment" name="comments" rows="5" cols="25" placeholder="Enter your comment here..."></textarea>
         </br>
-        <button type="submit" name="submit-button">
+        <button id="submit" type="submit" name="submit-button">
             Submit
         </button>
 
@@ -68,6 +69,16 @@
             Clear
         </button>
     </form>
+
+    <script>
+        function empty(){
+        const myform = document.querySelector("form");
+        if (myform["email"].value.length == 0){
+          alert("Enter a valid email address")
+        }
+      }
+        document.getElementById("submit").onclick = empty
+      </script>
 </body>
 
 </html>
